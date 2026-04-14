@@ -16,15 +16,14 @@
         <div class="header-content">
             <a href="#home" class="logo">My Portfolio</a>
             <!-- Hamburger Icon -->
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-            <nav class="nav-links">
-                <a href="#home" class="nav-button"><i class="fa-solid fa-house-chimney"></i></a>
-                <a href="#about" class="nav-button"><i class="fa-solid fa-circle-user"></i></a>
-                <a href="#skills" class="nav-button"><i class="fa-solid fa-code"></i></a>
-                <a href="#projects" class="nav-button"><i class="fa-solid fa-briefcase"></i></a>
-                <a href="#contact" class="nav-button"><i class="fa-solid fa-envelope-open"></i></a>
+            <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false" role="button" tabindex="0">&#9776;</div>
+            <nav id="primary-nav" class="nav-links">
+                <a href="#home" class="nav-button" aria-label="Home"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></a>
+                <a href="#about" class="nav-button" aria-label="About"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></a>
+                <a href="#skills" class="nav-button" aria-label="Skills"><i class="fa-solid fa-code" aria-hidden="true"></i></a>
+                <a href="#projects" class="nav-button" aria-label="Projects"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></a>
+                <a href="#contact" class="nav-button" aria-label="Contact"><i class="fa-solid fa-envelope-open" aria-hidden="true"></i></a>
             </nav>
-            </div>
         </div>
     </header>
 
@@ -55,7 +54,7 @@
                         <p>Hello! I'm Kwabena, a dedicated backend web developer with experience in creating dynamic and responsive web applications. My journey into web development began with a fascination for how interactive experiences are crafted online, leading me to dive deep into back-end technologies.</p>
                         <p>My work centers on developing clean backend systems and well-structured APIs while ensuring seamless integration with frontend interfaces. I enjoy turning real-world problems into practical digital solutions through thoughtful design, efficient code, and continuous improvement. My goal is to build impactful products that provide seamless user experiences.</p>
                         <p>I am particularly interested in writing maintainable code, optimizing performance, and building systems that are easy to scale and support. I value collaboration, clear communication, and learning from both technical challenges and team environments.</p>
-                        <a href="https://kkbresume.tiiny.site" target="_blank" class="cv-download" view>Download My CV</a>
+                        <a href="https://kkbresume.tiiny.site" target="_blank" rel="noopener noreferrer" class="cv-download">Download My CV</a>
                     </div>
                 </div>
             </div>
@@ -83,11 +82,12 @@
                         <p class="job-duration">May 2024 - May 2025</p>
                         <div class="job-description">
                             <ul>
-                                <li>Designed and implemented RESTful APIs using FastAPI to support web and mobile applications.</li>
+                                <li>Designed and implemented 10+ RESTful APIs using FastAPI to support web and mobile applications.</li>
                                 <li>Developed backend logic for data processing, validation, and secure storage.</li>
-                                <li>Implemented authentication and authorization mechanisms to control access and protect application data.</li>
-                                <li>Designed and maintained relational database schemas using PostgreSQL and Supabase.</li>
-                                <li>Participated in testing, debugging, and performance optimization activities.</li>
+                                <li>Implemented JWT-based authentication systems, preventing unauthorized access across all protected endpoints</li>
+                                <li>Integrated backend services with frontend components and 5+ third-party APIs.</li>
+                                <li>Utilized Celery with Redis for asynchronous task processing, improving system responsiveness and backend performance under load.</li>
+                                <li>Participated in API testing with Postman and Swagger, debugging, and backend performance optimization to ensure reliability and code quality</li>
                             </ul>
                         </div>
                     </div>
@@ -101,55 +101,55 @@
                 <h2>My Skills</h2>
                 <div class="skill-list">
                     <div class="cell">
-                        <img src="/css/images/CSS3.svg" alt="CSS3 logo" width="100" height="100">
+                        <img src="./css/images/CSS3.svg" alt="CSS3 logo" width="100" height="100">
                         <p>CSS3</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/HTML5.svg" alt="HTML5 logo" width="100" height="100">
+                        <img src="./css/images/HTML5.svg" alt="HTML5 logo" width="100" height="100">
                         <p>HTML5</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/JavaScript.svg" alt="JavaScript logo" width="100" height="100">
+                        <img src="./css/images/JavaScript.svg" alt="JavaScript logo" width="100" height="100">
                         <p>JavaScript</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/FastAPI.svg" alt="FastAPI logo" width="100" height="100">
+                        <img src="./css/images/FastAPI.svg" alt="FastAPI logo" width="100" height="100">
                         <p>FastAPI</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/MongoDB.svg" alt="MongoDB logo" width="100" height="100">
+                        <img src="./css/images/MongoDB.svg" alt="MongoDB logo" width="100" height="100">
                         <p>MongoDB</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/Postgresql.png" alt="cloudinary logo" width="100" height="100">
+                        <img src="./css/images/Postgresql.png" alt="PostgreSQL logo" width="100" height="100">
                         <p>PostgreSQL</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/Python.svg" alt="python logo" width="100" height="100">
+                        <img src="./css/images/Python.svg" alt="Python logo" width="100" height="100">
                         <p>Python</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/Git.svg" alt="git logo" width="100" height="100">
+                        <img src="./css/images/Git.svg" alt="Git logo" width="100" height="100">
                         <p>Git</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/github (1).svg" alt="github logo" width="100" height="100">
+                        <img src="./css/images/github (1).svg" alt="GitHub logo" width="100" height="100">
                         <p>GitHub</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/Docker.webp" alt="VS Code logo" width="100" height="100">
+                        <img src="./css/images/Docker.webp" alt="Docker logo" width="100" height="100">
                         <p>Docker</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/Supabase.png" alt="LaTeX logo" width="100" height="100">
+                        <img src="./css/images/Supabase.png" alt="Supabase logo" width="100" height="100">
                         <p>Supabase</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/logo-appwrite.png" alt="appwrite logo" width="150" height="100">
+                        <img src="./css/images/logo-appwrite.png" alt="Appwrite logo" width="150" height="100">
                         <p>Appwrite</p>
                     </div>
                     <div class="cell">
-                        <img src="/css/images/DigitalOcean.jpg" alt="appwrite logo" width="150" height="100">
+                        <img src="./css/images/DigitalOcean.jpg" alt="DigitalOcean logo" width="150" height="100">
                         <p>DigitalOcean</p>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                 <h2>My Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <img src="/css/images/Farm.jpeg" alt="Farm Estates logo">
+                        <img src="./css/images/Farm.jpeg" alt="Farm Estates logo">
                         <div class="project-info">
                             <h3>Farm Estates Ltd  API</h3>
                             <p>Implemented full Appwrite authentication workflows including login, JWT, session handling, email verification, and password recovery.</p>
@@ -171,7 +171,7 @@
                             <p>Supported the Flutter team by testing 15+ API endpoints using Swagger and Postman, reducing frontend integration issues.</p>
                             <p>Deployed the backend to DigitalOcean App Platform and configuring 20+ environment variables and ensuring stable, error-free production deployments.</p>
                             <div class="project-links">
-                                <a href="https://shark-app-co89i.ondigitalocean.app/" target="_blank" class="project-link">Live Demo</a>
+                                <a href="https://shark-app-co89i.ondigitalocean.app/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
                             </div>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -182,7 +182,7 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="/css/images/CGA.png" alt="E-commerce logo">
+                        <img src="./css/images/CGA.png" alt="NexStep logo">
                         <div class="project-info">
                             <h3>NexStep Career Grooming Agency API</h3>
                             <p>NexStep is a digital platform that focuses on empowering, connecting, and transforming Ghana's next generation of talent through mentorship, training, and innovation.</p>
@@ -190,8 +190,8 @@
                             <p>Integrated backend services with frontend components and third-party tools to support program registration and communication workflows.</p>
                             <p>Participated in testing, debugging, and incremental feature improvements as part of ongoing platform development.</p>
                             <div class="project-links">
-                                <a href="https://cga-app.onrender.com" target="_blank" class="project-link">Live Demo</a>
-                                <a href="https://github.com/K2VsMaN/career_grooming-agency_api.git" target="_blank" class="project-link">GitHub Repo</a>
+                                <a href="https://cga-app.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                                <a href="https://github.com/K2VsMaN/career_grooming-agency_api.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
                             </div>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -202,13 +202,13 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="/css/images/E-commerce.jpg" alt="E-commerce logo">
+                        <img src="./css/images/E-commerce.jpg" alt="E-commerce logo">
                         <div class="project-info">
                             <h3>AfriCart </h3>
                             <p>A backend e-commerce application featuring user authentication, product listings, shopping cart, and payment integration.</p>
                             <div class="project-links">
-                                <a href="https://ecommerce-api-a0po.onrender.com/docs#/" target="_blank" class="project-link">Live Demo</a>
-                                <a href="https://github.com/KwabenaK003/ecommerce_api.git" target="_blank" class="project-link">GitHub Repo</a>
+                                <a href="https://ecommerce-api-a0po.onrender.com/docs#/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                                <a href="https://github.com/KwabenaK003/ecommerce_api.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
                             </div>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -219,13 +219,13 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="/css/images/event-management-creation_01.jpg" alt="Event Management logo">
+                        <img src="./css/images/event-management-creation_01.jpg" alt="Event Management logo">
                         <div class="project-info">
                             <h3>Plannix</h3>
-                            <p>Built a fully  working backend api of an event management platform that takes a vendor's advert and post them for users. It inlcuded a database where all events and user's information reside.</p>
+                            <p>Built a fully working backend API of an event management platform that takes a vendor's advert and posts them for users. It included a database where all events and users' information reside.</p>
                             <div class="project-links">
-                                <a href="https://event-manager-api-i1xi.onrender.com/docs#" target="_blank" class="project-link">Live Demo</a>
-                                <a href="https://github.com/KwabenaK003/event_manager_api.git" target="_blank" class="project-link">GitHub Repo</a>
+                                <a href="https://event-manager-api-i1xi.onrender.com/docs#" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                                <a href="https://github.com/KwabenaK003/event_manager_api.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
                             </div>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -235,13 +235,13 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="/css/images/Business-Management-1.jpg" alt="Task Management logo">
+                        <img src="./css/images/Business-Management-1.jpg" alt="Business Management logo">
                         <div class="project-info">
                             <h3>Business Management Application</h3>
                             <p>Built backend components using Python, FastAPI, and PostgreSQL for user management, transactions, and reporting.</p>
                             <p>Ensured reliable data flow between frontend and backend systems.</p>
                             <div class="project-links">
-                                <a href="https://github.com/KwabenaK003/Business-Management-API.git" target="_blank" class="project-link">GitHub Repo</a>
+                                <a href="https://github.com/KwabenaK003/Business-Management-API.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
                             </div>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -251,13 +251,13 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="/css/images/Advert.png" alt="Project Thumbnail 3">
+                        <img src="./css/images/Advert.png" alt="Stellar Advertising logo">
                         <div class="project-info">
                             <h3>Stellar Advertising</h3>
                             <p>My team were tasked to design and develop a complete advertisement management platform of which we successfully designed and developed a complete an event advertisement management platform, delivering both the front-end and back-end. My role was delivering the endpoints at the backend of which I executed them flawlessly.</p>
                             <div class="project-links">
-                                <a href="https://advertisement-manager-bbmr.onrender.com" target="_blank" class="project-link">Live Demo</a>
-                                <a href="https://github.com/K2VsMaN/advert_management_platform_api.git" target="_blank" class="project-link">GitHub Repo</a>
+                                <a href="https://advertisement-manager-bbmr.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                                <a href="https://github.com/K2VsMaN/advert_management_platform_api.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
                             </div>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -268,13 +268,13 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="/css/images/Book Search.jpg" alt="Project Thumbnail 3">
+                        <img src="./css/images/Book Search.jpg" alt="Book Search logo">
                         <div class="project-info">
                             <h3>Book Search API</h3>
                             <p>Created a book search api using Google Book API as the external API to fetch data from there and store them in my MongoDB database.</p>
                             <div class="project-links">
-                                <a href="https://book-search-api-tjtc.onrender.com/docs#" target="_blank" class="project-link">Live Demo</a>
-                                <a href="https://github.com/KwabenaK003/Book_search_api.git" target="_blank" class="project-link">GitHub Repo</a>
+                                <a href="https://book-search-api-tjtc.onrender.com/docs#" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                                <a href="https://github.com/KwabenaK003/Book_search_api.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
                             </div>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -285,13 +285,13 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="/css/images/pos-growth.png" alt="Project Thumbnail 3">
+                        <img src="./css/images/pos-growth.png" alt="Point-of-Sale system logo">
                         <div class="project-info">
                             <h3>Point-of-Sale (POS) System</h3>
                             <p>Designed a POS backend with FastAPI using JWT authentication, SQLAlchemy models, and transactional stock management. Sales automatically deduct inventory, and all critical routes are protected.</p>
                             <p>Implemented core business logic, API endpoints, and database models.</p>
                             <div class="project-links">
-                                <a href="https://github.com/KwabenaK003/Point-of-Sale-POS-System.git" target="_blank" class="project-link">GitHub Repo</a>
+                                <a href="https://github.com/KwabenaK003/Point-of-Sale-POS-System.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
                             </div>
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
@@ -301,15 +301,21 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="/css/images/Atm simulator.jpg" alt="ATM Simulator logo">
+                        <img src="./css/images/Atm simulator.jpg" alt="ATM Simulator logo">
                         <div class="project-info">
-                            <h3>ATM Simulator</h3>
-                            <p>Took an inspiration from how an ATM works and made a simple ATM simulator using python fundamentals.</p>
+                            <h3>Church Management System</h3>
+                            <p>Collaborated and developed a full-stack Church Management System using Next.js 14, React, Node.js, and Tailwind CSS, featuring a secure admin dashboard for managing members, visitors, and departments with full CRUD operations and CSV bulk import via PapaParse.</p>
+                            <p>Designed a Supabase (PostgreSQL) relational database with Row Level Security (RLS) and Supabase Auth, implementing role-based access control for Admin, Pastor, and Department Leader roles.</p>
+                            <p>Developed a QR code attendance system that generates unique per-service QR codes and captures real-time GPS coordinates via the Browser Geolocation API for seamless mobile checkins</p>
+                            <p> Integrated an automated email system using Resend and React Email to send welcome emails, service reminders, and visitor follow-ups, with all activity logged to the database.</p>
                             <div class="project-links">
-                                <a href="https://github.com/KwabenaK003/atm_simulator.git" target="_blank" class="project-link">GitHub Repo</a>
+                                <a href="https://github.com/KwabenaK003/attendance-system" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
                             </div>
                             <div class="project-tags">
-                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Tailwind CSS3</span>
                             </div>
                         </div>
                     </div>
@@ -325,26 +331,32 @@
                     <div class="personal-details">
                         <h3>My Contact Information</h3>
                         <div class="detail-item">
-                            <i class="fa-solid fa-envelope-open"></i> <!-- Email icon -->
+                            <i class="fa-solid fa-envelope-open" aria-hidden="true"></i> <!-- Email icon -->
                             <p>Email: <a href="mailto:kkboahene003@gmail.com">kkboahene003@gmail.com</a></p>
                         </div>
                         <div class="detail-item">
-                            <i class="fa-solid fa-phone"></i> <!-- Phone icon -->
-                            <p>Phone: +233 50 578 8954</a></p>
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i> <!-- Phone icon -->
+                            <p>Phone: <a href="tel:+233505788954">+233 50 578 8954</a></p>
                         </div>
                         <div class="detail-item">
-                            <i class="fa-solid fa-location-dot"></i> <!-- Location icon -->
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> <!-- Location icon -->
                             <p>Location: Dansoman, Ghana</p>
                         </div>
                         <div class="detail-item">
                             <!-- LinkedIn icon (conceptual) -->
-                            <a href="https://www.linkedin.com/in/kwabena-boahene/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/kwabena-boahene/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            </a>
                         
                             <!-- GitHub icon (conceptual) -->
-                            <a href="https://github.com/KwabenaK003" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/KwabenaK003" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
                         
                             <!-- Twitter icon (conceptual) -->
-                            <a href="https://x.com/BbieKh?t=Cd3yzPcGucYdj774-sNONA&s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://x.com/BbieKh?t=Cd3yzPcGucYdj774-sNONA&s=08" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="contact-form-container">
@@ -367,8 +379,9 @@
                                 <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
                                 <input type="hidden" name="_template" value="table">
                             </div>
-                            <button type="submit" class="submit-button">Send Message<i class="fa-brands fa-telegram"></i></button>
+                            <button type="submit" class="submit-button">Send Message <i class="fa-brands fa-telegram" aria-hidden="true"></i></button>
                         </form>
+           
                     </div>
                 </div>
             </div>
@@ -381,11 +394,27 @@
             <p>&copy; 2026 Kwabena Kumi Boahene. All rights reserved.</p>
         </div>
     </footer>
-</body>
 <script>
     function toggleMenu() {
-      document.querySelector(".nav-links").classList.toggle("active");
+      const nav = document.querySelector(".nav-links");
+      nav.classList.toggle("active");
+
+      const hamburger = document.querySelector(".hamburger");
+      if (hamburger) {
+        hamburger.setAttribute("aria-expanded", nav.classList.contains("active").toString());
+      }
     }
-  </script>
+
+    const hamburger = document.querySelector(".hamburger");
+    if (hamburger) {
+      hamburger.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          toggleMenu();
+        }
+      });
+    }
+</script>
 <script src="navigation.js"></script>
+</body>
 </html>

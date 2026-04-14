@@ -40,6 +40,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0;
+            position: relative;
         }
 
         .logo {
@@ -53,6 +54,12 @@
         .nav-buttons {
             display: flex;
             gap: 15px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            align-items: center;
         }
 
         .nav-button {
@@ -132,10 +139,12 @@
 
         .home-image {
             width: 400px;
+            max-width: 100%;
+            height: auto;
             border-radius: 150px;
             top: 0;
             padding: 0;
-            display: flex;
+            display: block;
         }
 
         .home-text {
@@ -415,7 +424,7 @@
         }
 
         .project-link:hover {
-            background-color: #e9d30f;
+            background-color: #c8b40d;
         }
 
         .project-tags {
@@ -524,7 +533,7 @@
         .form-group textarea:focus {
             outline: none;
             border-color: #e9d30f;
-            box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.3);
+            box-shadow: 0 0 0 3px rgba(233, 211, 15, 0.35);
         }
 
         .form-group textarea {
@@ -549,6 +558,16 @@
         .submit-button:hover {
             background-color: #101113   ;
             transform: translateY(-2px);
+        }
+
+        .nav-button:focus-visible,
+        .cta-button:focus-visible,
+        .project-link:focus-visible,
+        .submit-button:focus-visible,
+        .cv-download:focus-visible,
+        .detail-item a:focus-visible {
+            outline: 3px solid #e9d30f;
+            outline-offset: 3px;
         }
 
         /* Footer */
