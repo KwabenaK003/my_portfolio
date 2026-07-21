@@ -16,13 +16,13 @@
         <div class="header-content">
             <a href="#home" class="logo">My Portfolio</a>
             <!-- Hamburger Icon -->
-            <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false" role="button" tabindex="0">&#9776;</div>
+            <button class="hamburger" type="button" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">&#9776;</button>
             <nav id="primary-nav" class="nav-links">
-                <a href="#home" class="nav-button" aria-label="Home"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></a>
-                <a href="#about" class="nav-button" aria-label="About"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></a>
-                <a href="#skills" class="nav-button" aria-label="Skills"><i class="fa-solid fa-code" aria-hidden="true"></i></a>
-                <a href="#projects" class="nav-button" aria-label="Projects"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></a>
-                <a href="#contact" class="nav-button" aria-label="Contact"><i class="fa-solid fa-envelope-open" aria-hidden="true"></i></a>
+                <a href="#home" class="nav-button" aria-label="Home"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i><span>Home</span></a>
+                <a href="#about" class="nav-button" aria-label="About"><i class="fa-solid fa-circle-user" aria-hidden="true"></i><span>About</span></a>
+                <a href="#skills" class="nav-button" aria-label="Skills"><i class="fa-solid fa-code" aria-hidden="true"></i><span>Skills</span></a>
+                <a href="#projects" class="nav-button" aria-label="Projects"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Projects</span></a>
+                <a href="#contact" class="nav-button" aria-label="Contact"><i class="fa-solid fa-envelope-open" aria-hidden="true"></i><span>Contact</span></a>
             </nav>
         </div>
     </header>
@@ -35,8 +35,10 @@
                     <img src="./css/images/self1.jpg" alt="Self image" class="home-image">
                 </div>
                 <div class="home-text">
-                    <h2>I'm <span style="color: #e9d30f;">KWABENA KUMI BOAHENE.</span></h2>
-                    <p>An innovative and dedicated Ghanaian Backend Web Developer with 2+ years of experience in building API-driven applications and data-backed systems using Python frameworks.</p>
+                    <p class="hero-eyebrow">FULL-STACK SOFTWARE ENGINEER</p>
+                    <h1>I'm <span>KWABENA KUMI BOAHENE.</span></h1>
+                    <p>An innovative and dedicated Ghanaian Full-stack Software Engineer with over 2 years of experience in demonstrated ability to design, build, and ship production web 
+                        applications end-to-end. Passionate about building products that work at scale and data-powered applications.</p>
                     <div class="home-cta-buttons">
                         <a href="#projects" class="cta-button">View My Work</a>
                         <a href="#contact" class="cta-button secondary">Get in Touch</a>
@@ -51,10 +53,14 @@
                 <h2>About Me</h2>
                 <div class="about-content">
                     <div class="about-introduction">
-                        <p>Hello! I'm Kwabena, a dedicated backend web developer with experience in creating dynamic and responsive web applications. My journey into web development began with a fascination for how interactive experiences are crafted online, leading me to dive deep into back-end technologies.</p>
-                        <p>My work centers on developing clean backend systems and well-structured APIs while ensuring seamless integration with frontend interfaces. I enjoy turning real-world problems into practical digital solutions through thoughtful design, efficient code, and continuous improvement. My goal is to build impactful products that provide seamless user experiences.</p>
+                        <p>Hello! I'm Kwabena, a dedicated Full-stack Software Engineer(Backend Heavy) with demonstrated ability to design, build, and ship production web applications end-to-end. 
+                            I'm proficient in Python, React, Next.js, TypeScript, and Node.js, with solid experience in PostgreSQL database design and NoSQL database, RESTful API development, and secure authentication systems as well as 
+                            Tailwind CSS. I have strong foundation in system architecture, DevOps tools including Docker, AWS, and Azure.</p>
+                        <p>My journey into web development began with curiosity on how a website works. So, I started by developing clean backend systems and well-structured APIs while ensuring seamless integration with frontend interfaces. 
+                            I later add added frontend systems as well as integrating both frontend and backend and deploying systems and applications. 
+                            I enjoy turning real-world problems into practical digital solutions through thoughtful design, efficient code, and continuous improvement.</p>
                         <p>I am particularly interested in writing maintainable code, optimizing performance, and building systems that are easy to scale and support. I value collaboration, clear communication, and learning from both technical challenges and team environments.</p>
-                        <a href="https://kkbresume.tiiny.site" target="_blank" rel="noopener noreferrer" class="cv-download">Download My CV</a>
+                        <a href="./css/Web_dev_CV01.pdf" target="_blank" rel="noopener noreferrer" class="cv-download">Download My CV</a>
                     </div>
                 </div>
             </div>
@@ -100,6 +106,9 @@
             <div class="container">
                 <h2>My Skills</h2>
                 <div class="skill-list">
+                    <div class="skill-group">
+                        <h3>Frontend</h3>
+                        <div class="skill-group-list">
                     <div class="cell">
                         <img src="./css/images/CSS3.svg" alt="CSS3 logo" width="100" height="100">
                         <p>CSS3</p>
@@ -112,6 +121,15 @@
                         <img src="./css/images/JavaScript.svg" alt="JavaScript logo" width="100" height="100">
                         <p>JavaScript</p>
                     </div>
+                    <div class="cell">
+                        <img src="./css/images/React-Frontend_Language.png" alt="JavaScript logo" width="100" height="100">
+                        <p>React</p>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Backend &amp; Data</h3>
+                        <div class="skill-group-list">
                     <div class="cell">
                         <img src="./css/images/FastAPI.svg" alt="FastAPI logo" width="100" height="100">
                         <p>FastAPI</p>
@@ -128,6 +146,15 @@
                         <img src="./css/images/Python.svg" alt="Python logo" width="100" height="100">
                         <p>Python</p>
                     </div>
+                    <div class="cell">
+                        <img src="./css/images/node-js-framework.webp" alt="Python logo" width="100" height="100">
+                        <p>Node.js</p>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools &amp; Platforms</h3>
+                        <div class="skill-group-list">
                     <div class="cell">
                         <img src="./css/images/Git.svg" alt="Git logo" width="100" height="100">
                         <p>Git</p>
@@ -152,6 +179,8 @@
                         <img src="./css/images/DigitalOcean.jpg" alt="DigitalOcean logo" width="150" height="100">
                         <p>DigitalOcean</p>
                     </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,6 +190,52 @@
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="./css/images/Screenshot 2026-05-08 105305.png" alt="Church Management System dashboard" loading="lazy">
+                        <div class="project-info">
+                            <h3>Church Management System</h3>
+                            <p>Collaborated and developed a full-stack Church Management System using Next.js 14, React, Node.js, and Tailwind CSS, featuring a secure admin dashboard for managing members, visitors, and departments with full CRUD operations and CSV bulk import via PapaParse.</p>
+                            <p>Designed a Supabase (PostgreSQL) relational database with Row Level Security (RLS) and Supabase Auth, implementing role-based access control for Admin, Pastor, and Department Leader roles.</p>
+                            <p>Developed a QR code attendance system that generates unique per-service QR codes and captures real-time GPS coordinates via the Browser Geolocation API for seamless mobile checkins</p>
+                            <p>Integrated an automated email system using Resend and React Email to send welcome emails, service reminders, and visitor follow-ups, with all activity logged to the database.</p>
+                            <p>Hosted the project on vercel and added a domain</p>
+                            <div class="project-links">
+                                <a href="https://busdaceng.org/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                                <a href="https://github.com/KwabenaK003/Church-Management-System_B.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Tailwind CSS3</span>
+                                <span class="project-tag">Supabase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./css/images/Office attendance.png" alt="ATM Simulator logo">
+                        <div class="project-info">
+                            <h3>Office Attendance Management System</h3>
+                            <p>Architected a production-grade full-stack platform using Next.js (App Router), React, TypeScript, and Tailwind CSS with strict separation of concerns across API routes, service libraries, reusable 
+                                components, and a centralised configuration system designed for maintainability and scale.</p>
+                            <p>Designed a multi-table PostgreSQL (Supabase) schema covering members, departments, visitors, and attendance records — implementing Row Level Security policies, performance indexes, and automated database triggers to enforce data integrity.</p>
+                            <p>Built backend integrations for real-time face recognition via face-api.js, browser Geolocation API with reverse geocoding, bulk CSV import, automated SMTP email dispatch, 
+                                and a Recharts reporting dashboard with CSV export.</p>
+                            <p>Implemented an end-to-end observability pattern across API routes: structured request logging with unique request IDs, sanitised payload capture, and layered error handling that surfaces actionable context server-side while returning safe, generic responses to clients</p>
+                            <p>Containerised local development environment using Docker for consistent dev-to-production parity.</p>
+                            <div class="project-links">
+                                <a href="https://attendance-management-system-smoky.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Live <Link></Link></a>
+                                <a href="https://github.com/KwabenaK003/attendance-system.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Tailwind CSS3</span>
+                                <span class="project-tag">Supabase</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="project-card">
                         <img src="./css/images/Farm.jpeg" alt="Farm Estates logo">
                         <div class="project-info">
@@ -285,43 +360,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="./css/images/pos-growth.png" alt="Point-of-Sale system logo">
-                        <div class="project-info">
-                            <h3>Point-of-Sale (POS) System</h3>
-                            <p>Designed a POS backend with FastAPI using JWT authentication, SQLAlchemy models, and transactional stock management. Sales automatically deduct inventory, and all critical routes are protected.</p>
-                            <p>Implemented core business logic, API endpoints, and database models.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/KwabenaK003/Point-of-Sale-POS-System.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
-                            </div>
-                            <div class="project-tags">
-                                <span class="project-tag">Python</span>
-                                <span class="project-tag">FastAPI</span>
-                                <span class="project-tag">Appwrite</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./css/images/Screenshot 2026-05-08 105305.png" alt="ATM Simulator logo">
-                        <div class="project-info">
-                            <h3>Church Management System</h3>
-                            <p>Collaborated and developed a full-stack Church Management System using Next.js 14, React, Node.js, and Tailwind CSS, featuring a secure admin dashboard for managing members, visitors, and departments with full CRUD operations and CSV bulk import via PapaParse.</p>
-                            <p>Designed a Supabase (PostgreSQL) relational database with Row Level Security (RLS) and Supabase Auth, implementing role-based access control for Admin, Pastor, and Department Leader roles.</p>
-                            <p>Developed a QR code attendance system that generates unique per-service QR codes and captures real-time GPS coordinates via the Browser Geolocation API for seamless mobile checkins</p>
-                            <p>Integrated an automated email system using Resend and React Email to send welcome emails, service reminders, and visitor follow-ups, with all activity logged to the database.</p>
-                            <p>Hosted the project on vercel and added a domain</p>
-                            <div class="project-links">
-                                <a href="https://busdaceng.org/#" target="_blank" rel="noopener noreferrer" class="project-link">Live <Link></Link></a>
-                                <a href="https://github.com/KwabenaK003/Church-Management-System_B.git" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo</a>
-                            </div>
-                            <div class="project-tags">
-                                <span class="project-tag">Next.js</span>
-                                <span class="project-tag">React</span>
-                                <span class="project-tag">Node.js</span>
-                                <span class="project-tag">Tailwind CSS3</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -333,7 +371,7 @@
                 <div class="contact-content">
                     <div class="personal-details">
                         <h3>My Contact Information</h3>
-                        <div class="detail-item">
+                        <div class="detail-item social-links-row">
                             <i class="fa-solid fa-envelope-open" aria-hidden="true"></i> <!-- Email icon -->
                             <p>Email: <a href="mailto:kkboahene003@gmail.com">kkboahene003@gmail.com</a></p>
                         </div>
@@ -417,7 +455,22 @@
         }
       });
     }
+
+    const navButtons = document.querySelectorAll(".nav-button");
+    navButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        navButtons.forEach((item) => {
+          item.classList.remove("active");
+          item.removeAttribute("aria-current");
+        });
+        button.classList.add("active");
+        button.setAttribute("aria-current", "page");
+        document.querySelector(".nav-links").classList.remove("active");
+        if (hamburger) {
+          hamburger.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
 </script>
-<script src="navigation.js"></script>
 </body>
 </html>
